@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+
+<head>
+  <title>images</title>
+  <style>
+    body {
+      margin: 0;
+    }
+
+    #container {
+      margin: auto;
+      max-width: 1920px;
+    }
+
+    img {
+      float: left;
+      width: 33.3%;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="container">
+    {% for image in images %}
+    <a href="images/{{ image }}" target="_blank">
+      <img src="images/{{ image }}">
+    </a>
+    {% endfor %}
+  </div>
+</body>
+
+</html>
